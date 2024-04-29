@@ -1,0 +1,14 @@
+Automation Framework
+---------------------
+Logging - record all the events from the application in the form of text.
+
+Adv of Log files in Automation:
+We may run more than 100 testcases which may pass and fail. These files are used to check it and why and where it got failed 
+
+Log Levels - All < Trace < Debug < Info < Warn < Error < Fatal < Off 
+Most we use DEBUG and INFO
+If developer ask log file,we send DEBUG level log file
+
+
+Appenders - where to generate logs (Console/File(RollingFile))
+Loggers  - what type of logs generate (All < Trace < Debug < Info < Warn < Error < Fatal < Off)

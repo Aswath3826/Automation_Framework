@@ -1,0 +1,41 @@
+Automation framework
+--------------
+
+pom.xml
+-----
+dependencies --- download required depency jars for project
+plugins  ---> to compile and run the project
+
+Types of plugins
+-----------------------------
+1) maven compiler plugin(responsible for compiling the project)
+2) maven surefire plugin(responsible for running the project)
+
+1) maven plugin for eclipse
+2) install maven os level(outside of eclipse execution)
+
+
+Repository(Storage area)
+1) Git - local repository(accessible by individuals)
+2) Github - remote repository(here the code is SharedCode, where everybody in the team can access the code)
+
+Both are also called as Configuration Management System(CMS) or Version Control System(VCS)
+
+Each indiviual, whatever code they(Both) have built, they will "COMMIT" to Git(Local Repository), in their own machines
+From Local, they will "PUSH" the code to Remote Repository
+
+Refer Img Git-GitHub
+------------------------------
+Both Developers and testers will do their work and push the code to GitHub by the end of the day
+DevOps will "PULL" the code from GitHub of both and do their work at night
+
+
+location of project:   C:\workspaces\15-Sept-2023batch\opencart
+
+cd C:\workspaces\15-Sept-2023batch\opencart
+mvn test
+
+Agile Process : https://www.youtube.com/watch?v=h2Xzq2fbafM&pp=ygUKc2RldCBhZ2lsZQ%3D%3D
+Jira Tool :  https://www.youtube.com/watch?v=Wgyirv9juFI&pp=ygUKc2RldCBhZ2lsZQ%3D%3D
+
+

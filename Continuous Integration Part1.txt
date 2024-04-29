@@ -1,0 +1,98 @@
+Git, Github
+--------------
+Git - local repository ( source code management system / vesrion control system)
+Github - remote repository
+
+Refer Git-Workflow pdf:
+Working Directory(eclispe)------>Staging Area(Virtual)----->Git Repository---------->Github
+
+
+pre-requisites:
+-----------
+1) Download & install git software
+	https://git-scm.com/downloads
+
+2) create account with github.com
+	https://github.com/
+
+3) Login to github.com & create  new remote repository. capture url.
+https://github.com/pavanoltraining/opencart.git
+Project work space:  C:\workspaces\15-Sept-2023batch\opencart
+
+4) Create github token for login( create your own token)
+	token : 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
+
+work flow
+---------
+Round 1
+-----
+1)  create a new local repository  ( one time)
+git init
+
+2) provided user info to git repo. (one time)
+ 
+	git config --global user.name "your name"
+    	git config --global user.email "your email"
+git 
+ 	git status(Anytime to see the status of the file(untracked, tracked...))
+
+3) Adding files/folders to staging/indexing
+   git add -A         -->add all the files and folders to staging
+    git add filename  --> only that file
+    git add *.java    --> files with .java
+    git add foldername --> only the folder
+
+4) Commit the code into Local(git) repository
+	git commit -m "commit message"
+
+5) connect local repository with remote rep.(One time)
+	git remote add origin "https://github.com/pavanoltraining/opencart.git"
+
+Before Step 6 --> We have to create a Token which we use instead of password(In Github-->Settings--->Dev Settings-->Personal Access Tokens-->Token classic)
+
+6) push the code into remote repository.(After this cmd, it will ask email id and password)
+   	git push origin master
+		(or)
+	git push -u origin main(if master push gives error, then we can create a main branch and push in it)
+
+	Username---->email
+	password---->token
+
+
+Round 2
+--------
+1) git add -A
+2) git commit -m "commit msge"
+3) git push origin master
+
+SCENARIO 1  :  Getting files from remote repository TO Local repo/workspace
+----
+git pull "https://github.com/pavanoltraining/opencart.git"
+
+
+SCENARIO 2: Getting full project from Remote repository to local(Cloning)
+-----
+git clone "https://github.com/pavanoltraining/opencart.git"
+
+https://github.com/Aswath3826/Hackthon_Project
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+

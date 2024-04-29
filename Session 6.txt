@@ -1,0 +1,38 @@
+Session 6
+
+Selenium Grid
+----------------------------------------
+
+It is used mostly by product based companies to test the application in different enviroments(OS---> mac, windows, Linux...) and their browsers(Chrome,Safari...)
+
+Selenium Grid contains Hub and Nodes(refer doc)
+Nodes - Different enviroments
+Hub - Selenium Hub - where the nodes connects. We control the procedure of the test from the here
+
+In Test Case(setup), we have setup Grid URL/Node URL(which enviroment), OS and Browser.
+To see all these operations(how many nodes, which browser, in which machine it is running....), we use Grid Console URL
+
+Two types:
+
+Standalone Setup (Single machine)
+Hub & Node Setup (Multiple machines)
+
+
+In Setup, For Remote Execution, we use:
+
+DesiredCapabilities cap = new DesiredCapabilities();
+//For Platform
+cap.setPlatform(Platform.WIN11); //Platform.MAC
+//For Browser
+cap.setBrowserName("chrome"); // "MicrosoftEdge"
+//Driver to RemoteWebdriver
+driver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), cap);
+
+In setup, for local execution we use what we know already.
+
+Setup Selenium (follow the doc steps)
+----------------------------
+Selenium-------->Selenium Grid -----------> Latest Stable version---
+
+Note: we should not close the cmd and the link after setup. While test execution we can parallelly see the info in the Selenium Grid Environment
+      After test execution, in cmd promt we enter "control c" to exit the test

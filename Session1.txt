@@ -1,0 +1,66 @@
+Automation Framework
+---------------------------
+
+It is defined as the way of oraganising the automation project files and folders in structured manner
+
+Objectives
+---------------------------
+
+1) Re-Usablity
+2) Maintainability
+3) Readability (Everyone should be able to understand)
+
+Types of frameworks
+--------------------------
+
+1) Built-in(already available in market)
+	Eg: testng,juint,cucumber etc...
+2) customized(user defined)
+	Eg : modular framework, data driven, keyword driven, hybrid driven framework etc...
+
+Hybrid driven Framework is more suitable when we come to open source tools like selenium hybrid frame work. It is more suitable whenever we want to integrate with some third party libraries or tools.
+
+Phases
+-----------------
+1) Analysing AUT(Application Under Testing)
+	- Number of pages
+	- what are all elements / how / type
+	- what to automate/ what we cannot automate
+
+2) Choose testcases for automation (ImP)(Main responsibility of automation tester)
+
+Eg:
+100 TC's---------> 90 automatable  10 cannot automation
+Company considers 100% automation if all 90 automatable TC's are done automatically
+
+	Criterias : 
+		1) Focus on Sanity testcases(Priority 1)
+		2) Data Driven testcases/ Re-tests (Priority 2)
+			(Testcases with multiple set of datas to execute (Positive & Negative Testing))
+		3) Regression test cases(Priority 3)
+		4) Any other cases(Priority 4)
+				(Companies are expecting now)
+
+3) Design and Development of framework (Blueprint)
+
+4) Execution - Local(At development system),than Remote(Selenium Grid)
+
+5)Maintence (GitHub - other will able to access the project)
+
+Many Domains are there like banking, financial, medical
+E-Commerce Domain
+---------------------------
+
+1) Frontend Operations (customers, users)
+	- Register an account
+	- login
+	- search for the product
+	- add/edit/delete products from the cart
+	- order products
+	- reviews
+	 etc.....
+2) Backend operations (admins, backend teams)
+	- maintain products info
+	- maintain customers info
+	- maintain orders info
+	- maintain store info		
